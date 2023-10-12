@@ -10,17 +10,293 @@
  */
 
 /* Core CSS required for Ionic components to work properly */
-@import "@ionic/angular/css/core.css";
+@import "~@ionic/angular/css/core.css";
 
 /* Basic CSS for apps built with Ionic */
-@import "@ionic/angular/css/normalize.css";
-@import "@ionic/angular/css/structure.css";
-@import "@ionic/angular/css/typography.css";
-@import "@ionic/angular/css/display.css";
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
 
 /* Optional CSS utils that can be commented out */
-@import "@ionic/angular/css/padding.css";
-@import "@ionic/angular/css/float-elements.css";
-@import "@ionic/angular/css/text-alignment.css";
-@import "@ionic/angular/css/text-transformation.css";
-@import "@ionic/angular/css/flex-utils.css";
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+
+body		{ -webkit-font-smoothing: antialiased; 
+    -webkit-text-size-adjust: 100%;
+    background-color:#C9BF9C;  }
+
+
+h1, h2, h3, h4, h5, h6 { font-family:'Josefin Sans', Arial, Helvetica, sans-serif;
+    font-weight: 400; color: #000; }
+
+h1 { font-size:24px; }
+h2 { font-size:20px; }
+h3 { font-size:16px; }
+h4 { font-size:14px; }
+h5 { font-size:14px; }
+h6 { font-size:14px; }
+
+
+
+/* Text Elements */
+p, li, a		{ font-family:'Open Sans', 'Source Sans Pro', Arial, Helvetica, sans-serif; }
+
+
+
+/*a {
+text-decoration:none;
+color:inherit;
+}
+
+*/
+blockquote  	{ color:#000; font-size:12px; }
+
+strong      	{ font-weight: bold; }
+em		      	{ font-style: italic; }
+
+/* Images */
+
+
+
+
+/* Containers */
+#top	 			{ background-color:#B2A254;
+    background-repeat:repeat-y; overflow:auto;
+    margin:0 auto; width:900px;    }
+
+    #top-bg { width:100%; background-color:#C9BF9C; clear:both  }
+
+
+@media screen and (max-width:900px){
+	#wrapper1 { width:100%; background-color:#B2A254 ; margin:0 auto;  }
+}
+
+
+
+@media screen and (max-width:900px){
+	#wrapper { width:100%; background-color:#B2A254 ; margin:0 auto;  }
+}
+
+
+@media screen and (max-width:900px){
+	#top { width:100%; background-color:#B2A254 ;clear:both; background-image:none  }
+}
+#top-bg			{ background-color:#B2A254  	}
+@media screen and (max-width:900px){
+	#top-bg { width:100%; background-color:#C9BF9C; clear:both  }
+}
+
+#name			{ float:left}
+#name h1			{ color:#fff; font-size:34px; font-weight:700;
+    padding:20px 0; margin-left:30px;
+    font-family:'Josefin Sans', 'Dosis', Arial, Helvetica, sans-serif; }
+
+    @media screen and (max-width:900px){
+        #name h1 {color:#fff; font-size:24px; font-weight:400; 
+            font-family:'Josefin Sans', 'Dosis', Arial, Helvetica, sans-serif; }
+            #name {text-align:center}
+    }
+    
+
+    #banner	 			{
+        margin:0 auto; width:900px; clear:both;  }
+
+        #banner	 img { width:900px;}    
+
+      
+    
+   
+       
+         
+        @media screen and (max-width:900px){
+         
+            #banner	 {width:100%}    
+        }
+
+        @media screen and (max-width:900px){
+         
+            #banner	 {width:100%}    
+        }
+    
+
+        #icons {margin:2% 10% 0 10%;}
+#icons               {float:right; }
+#iconss img     {  height:36px; width:36px; display:inline; padding: 0 2px 0 0}
+
+    
+
+        @media screen and (max-width:900px){
+         
+            #banner	img {width:100%}    
+        }
+    
+
+        #subbanner 		{ width:900px; margin:auto;  clear:both;
+            background-color:#887239; 
+            border-top:8px #796C42 solid;
+        }
+            #subbanner h3		{ padding:10px; font-size:20px; text-align:center;
+                color:#fff; }
+
+            
+        @media screen and (max-width:900px){
+         
+            #subbanner {width:100%;  border-top:2px #796C42 solid;}    }
+
+
+            @media screen and (max-width:900px){
+
+                #subbanner h3 { padding:  5px; font-size:12px; text-align:center;
+                color:#fff;} 
+           }
+
+           #content-bg  { width:900px; margin:0 auto;  clear:both; background-color:#E1DAC8;
+           }
+           @media screen and (max-width:900px){
+      
+             #content-bg {width:100%;background-color:#E1DAC8;
+                   } }    
+  
+            #content  { width:100%; margin:0 auto;  clear:both; padding:2%;
+              }
+              @media screen and (max-width:900px){
+         
+                #content {width:100%; padding:2%;
+                      } }    
+    
+          
+#content h2		{ font-size:54px; font-weight:400;
+					}
+#content h3		{ font-size:36px; font-weight:400;
+					}
+                
+
+
+         
+    #content  p {
+        font-family:Arial, Helvetica, sans-serif;
+        font-size:18px;
+        line-height:120%;
+        color:rgb(32,32,32);
+        text-align:left;
+        padding:15px 10px	
+        }
+
+        #address p { padding: 5px 5px 5px 5px}
+        @media screen and (max-width:500px){
+            #content p { font-size:12px; text-align:left;
+            
+        }
+        }
+          
+          @media screen and (max-width:900px){
+         
+            #content h2 {width:100%; font-size: 24px;
+                  } }   
+
+
+                  @media screen and (max-width:900px){
+         
+                    #content h3 {width:100%; font-size: 20px;
+                          } }   
+
+                  @media screen and (max-width:900px){
+         
+                    #content p {padding: 10px 5px; font-size: 14px;
+                          } }   
+
+
+                          #prices  {width:85%; font-style:italic;}
+                          #left {text-align: left}
+                          #right {float: right; font-weight: 500;}
+                          #prices p {padding: 5px 5px}  
+                  
+				
+                    #footer-bg  { width:900px; margin:0 auto;  clear:both; 	background-color:#8B753B;
+                  }
+                  @media screen and (max-width:900px){
+             
+                    #footer-bg {width:100%;	background-color:#8B753B;
+                          } }    
+
+                  #footer { width:900px; margin:0 auto;  clear:both; border-top:10px #796C42 solid;
+				
+                  }
+
+                  #footer p { text-align: center; font-size: 12px; padding: 5%;
+                  } 
+                  @media screen and (max-width:900px){
+             
+                    #footer {width:100%; border-top:8px #796C42 solid;
+                        background-color:#8B753B; padding: 5%;
+                          } }  
+
+                          @media screen and (max-width:900px){
+             
+                            #footer p { text-align: center; font-size: 12px; padding:3%;
+                                  } }  
+                                  
+                          
+
+
+                          #bar { width:900px;  margin:0 auto; clear:both;	background-color:#8B753B; }
+	
+                          #bar ul { width:100%;  margin:0 auto; padding:0 ;  border-top: 2px rgb(240,216,165) solid;
+                                             border-bottom: 2px rgb(240,216,165) solid;
+                                             text-align:center;}
+                          #bar ul li        {display:inline-block;
+                                             padding:10px;
+                                             font-size:15px; 
+                                             color:#fff;                 
+                                             margin:0 auto;
+                                            
+                           }
+                           
+                           #bar ul li a       {
+                                             
+                                              text-decoration:none;
+                                              color:#fff;  
+                                           
+                                             
+                                            
+                           }
+                          
+                          #bar ul li a:hover       {
+                                             
+                                              text-decoration:none;
+                                              color:black;
+                                           
+                                             
+                                            
+                           }
+                          
+                          
+                           
+                           ul li:hover {
+                              background-color:#FFFFCC;	
+                              
+                          }
+                          
+                          ul li a:hover { color:black;
+                              
+                          }
+                          @media screen and (max-width:900px){
+                            #bar {width:100%}
+                               }
+                          
+                          
+                          @media screen and (max-width:900px){
+                               #bar ul li {width:100%; font-size:12px; padding:2%;  border-bottom:orange 1px solid; border-right:0px;}
+                               
+                           
+                          }
+
+                           
+                        
+                                             
+                       
