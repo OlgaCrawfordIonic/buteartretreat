@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import { Router, RouterLink } from '@angular/router';
+import { RouterLink } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
+import { Title, Meta } from '@angular/platform-browser';
+
 
 @Component({
   selector: 'app-home',
