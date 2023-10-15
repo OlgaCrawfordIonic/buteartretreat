@@ -32,7 +32,7 @@ export class HomePage {
    this.metaService.addTags([
      { name: 'keywords', content: 'Isle of Bute holiday, accommodation, hotel, things to do' },
      { name: 'robots', content: 'index, follow' },
-     { name: 'description', content: 'Art retreat in beautiful location on the Isle of Bute' },
+     { name: 'description', content: 'Art retreat in a beautiful location on the Isle of Bute' },
      { name: 'author', content: 'buteartretreat.co.uk' },
      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
      { name: 'date', content: '2023-04-02', scheme: 'YYYY-MM-DD' },
